@@ -87,6 +87,7 @@ header {
   display: table;
   width: 100%;
   table-layout: auto;
+  
 }
 
 .header-flex {
@@ -113,14 +114,14 @@ header {
 
 .nav-search {
   display: table-cell;
-  max-width: 1000px;
+  max-width: 990px;
   width: 100%;
   vertical-align: middle;
   height: 48px;
 }
 
 .nav-search-padding {
-  max-width: 980px;
+  max-width: 950px;
   min-height: 48px;
   position: relative;
   border-color: rgba(235, 235, 235, 1);
@@ -138,12 +139,12 @@ header {
 .nav-margin>div {
   border-collapse: initial;
   border-spacing: 16px 0;
-  margin-left: -16px;
+  margin-left: -18px;
   margin-right: -16px;
   display: table;
   width: 100%;
   table-layout: auto;
-  padding-right: 20px;
+  padding-right: 0px;
   /* margin-left: -10px; */
 }
 
@@ -198,6 +199,7 @@ form>input:first-child {
  /* padding:13px 16px; */
  font-weight: 0;
  border: none;
+ min-width: 0;
 
 }
 form input{
@@ -220,7 +222,6 @@ form>input:last-child {
   margin-top: 1px;
   top: 15px;
   content: " ";
-  
 }
 input .text2::before{
   border-left: 1px solid #0e0e0e;
@@ -232,7 +233,8 @@ input .text2::before{
   top: 15px;
   left: 0;
   padding-right: 10px;
-  margin-left: 10px;
+  margin-left: 0px;
+  flex: 1;
 }
 
 form>div>input:nth-child(2) {
@@ -314,6 +316,9 @@ form>div>input:nth-child(2)::before{
   display: inline-block;
   /* margin-left: 16px !important; */
   border-color: rgba(235, 235, 235, 1);
+  /* margin-left: -0px; */
+  /* margin-left: -20px; */
+
 
 }
 
@@ -321,6 +326,9 @@ form>div>input:nth-child(2)::before{
   font-family: "Opensans-medium" !important;
   font-size: 14px;
   padding: 0 10px;
+  /* margin-left: -20px; */
+  padding-left: 20px;
+
 }
 
 .nav-content .for-padding {
@@ -400,7 +408,7 @@ form>div>input:nth-child(2)::before{
 .bottom-header {
   white-space: nowrap;
   border-color: rgba(235, 235, 235, 1);
-  margin-left: 120px;
+  margin-left: 110px;
 
 }
 
@@ -461,25 +469,37 @@ form>div>input:nth-child(2)::before{
   box-sizing: border-box;
   width: 100%;
   margin: auto;
-  padding: 15px 40px 0px 85px;
+  padding: 5px 40px 0px 80px;
 }
 
 .header-main-padding {
   padding-bottom: 150px;
   padding-top: 74px;
+  margin-left: -30px;
 }
 
 .header-main-content {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   max-width: 600px;
   /* margin-left: 40px; */
   height: 344px;
-  /* height: 100%; */
-
-
 }
 
+.header-main-button{
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  color: #fff;
+  width: 24px;
+  padding-right: 40px;
+}
+.long-btn{
+  height: 25.33%;
+  width: 10px;
+  border-radius: 30px;
+  background-color: #ffff;
+}
 .head-name h1 {
   display: flex;
   color: #ffffff;
@@ -488,6 +508,7 @@ form>div>input:nth-child(2)::before{
   font-size: 48px;
   line-height: 56px;
   padding-bottom: 23px;
+  padding-top: 10px;
 }
 
 .head-name button {
