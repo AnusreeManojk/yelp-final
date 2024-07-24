@@ -210,8 +210,7 @@ form input{
 
 }
 form>input:last-child {
-  /* padding-top: px; */
-  /* margin-top: 10px; */
+ 
 
   align-items: center;
   font-family: "opensans-regular";
@@ -222,19 +221,24 @@ form>input:last-child {
   margin-top: 1px;
   top: 15px;
   content: " ";
+  border-left: 2px solid #ebebeb;
 }
-input .text2::before{
-  border-left: 1px solid #0e0e0e;
+.input2::before{
+  border-left: 1px solid #d8d8db;
   height: 24px;
-  content: " ";
-  margin-left: 7px;
+  width: 50px;
+  content: "";
+  /* margin-left: 7px; */
   /* position: absolute; */
-  margin-top: 1px;
-  top: 15px;
-  left: 0;
+  /* margin-top: 1px; */
+  /* top: 15px; */
+  /* left: 0; */
   padding-right: 10px;
   margin-left: 0px;
   flex: 1;
+  margin-top: 12px;
+ 
+  
 }
 
 form>div>input:nth-child(2) {
@@ -615,7 +619,7 @@ form>div>input:nth-child(2)::before{
   border-style: solid;
   border-color: rgb(235, 235, 235);
   border-radius: 4px;
-  min-height: 400px;1900
+  min-height: 400px;
   max-height: 560px;
   box-sizing: border-box;
 }
